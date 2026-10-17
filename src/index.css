@@ -1,0 +1,91 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Manrope", ui-sans-serif, system-ui, sans-serif;
+  --color-bg: #101210;
+  --color-card: #1b1f1b;
+  --color-ink: #f2f1ea;
+  --color-muted: #a7aea4;
+  --color-accent: #c6f36b;
+  --color-danger: #f0b4a8;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #101210;
+  color: #f2f1ea;
+  font-family: var(--font-sans);
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+::selection {
+  background: #c6f36b;
+  color: #101210;
+}
+
+.afterhours-calendar {
+  color: #f2f1ea;
+}
+
+.afterhours-calendar .rdp-root {
+  --rdp-accent-color: #c6f36b;
+  --rdp-accent-background-color: rgba(198, 243, 107, 0.16);
+  --rdp-day-height: 36px;
+  --rdp-day-width: 36px;
+  --rdp-day_button-height: 34px;
+  --rdp-day_button-width: 34px;
+  --rdp-day_button-border-radius: 10px;
+  --rdp-selected-border: 0;
+  --rdp-today-color: #c6f36b;
+  --rdp-outside-opacity: 0.4;
+  --rdp-weekday-opacity: 0.65;
+  color: #f2f1ea;
+}
+
+.afterhours-calendar .rdp-caption_label {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.afterhours-calendar .rdp-selected {
+  color: #101210;
+}
+
+.afterhours-calendar .rdp-selected .rdp-day_button {
+  background: #c6f36b;
+  border: 0;
+  color: #101210;
+  font-weight: 600;
+}
+
+.afterhours-calendar .rdp-day_button:hover {
+  background: rgba(242, 241, 234, 0.08);
+}
+
+.afterhours-calendar .rdp-selected .rdp-day_button:hover {
+  background: #d4f78a;
+}
